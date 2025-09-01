@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-DMSans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Navigation backdrop blur fallback */
+.nav-backdrop {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}

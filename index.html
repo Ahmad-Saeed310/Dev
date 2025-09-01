@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body data-barba="wrapper" class=" overflow-x-hidden m-0 p-0  ">
+    <main data-barba="container" data-barba-namespace="home">
+
+    
+    <div id="load"
+        class="h-[100vh] relative w-full bg-black text-white md:text-[15vh] text-[5vh] flex flex-col gap-[20vh] font-DMSans font-regular items-center ">
+        <h1 class="absolute left-0 font-DMSans split1 name  ">AhmadSaeed</h1>
+        <h1 class="absolute  split2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">Front-end</h1>
+        <h1 class="absolute split3 right-0 bottom-0">Developer</h1>
+    </div>
+    <div id="hero" class=" text-black font-DMSans h-[100vh]">
+        <h1
+            class="splitname m-0 leading-none text-black font-DMSans font-semibold  ml-[2vh]  md:pt-[-7vh]  text-[5vh] md:text-[22vh] ">
+            AHMAD-SAEED</h1>
+        <div id="container" class="flex md:flex-row  flex-col w-full ">
+            <div id="leftcontainer" class=" ">
+                <video autoplay loop muted class="h-[23vh] videohero md:h-[55vh] w-auto ml-[2vh]  " src="/video.mp4"></video>
+                <h3
+                    class="text-[2.5vh] md:text-[3.5vh] font-semibold leading-none tracking-tight ml-[2vh]  mt-[2vh] md:mt-[5vh] ">
+                    Bringing design to life with pixel-perfect precision and smooth <br> animations.</h3>
+            </div>
+            <div id="rightcontainer" class=" pt-[5vh] md:pt-[25vh] md:pl-[5vw]   md:ml-0 ml-[20vw]">
+                <h5 class="text-[1.6vh] md:text-[2.2vh] font-light md:ml-[10vw]  ">I'm a 21 years-old Pakistani front-end developer <br> who
+                    cares about design. My focus is on precise <br> integration and crafting innovative interactions.</h5>
+                <div id="buttons" class="flex gap-[2vh] md:ml-[10vw] mt-[2vh] items-center pt-[2vh]">
+                    <div id="button1" class="hover:bg-black hover:text-white px-[1.7vh] py-[.8vh] text-[2vh] font-DMSans font-semibold border-black border-[.2vh] rounded-full ">
+                        <a href="./ProjectDisplay.html" class="hover:text-white" onclick="clicked()">See my projects</a></div>
+                        <!-- <a href="#" class="hover:transform-y:0% hover:scale-105px  hover:transform-y-100%" onclick="clicked()">See my projects</a> -->
+                        <div id="button2"><a href="#">Quick Overview</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div id="nav-container" class="nav"></div>
+    </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
+        integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="nav-component.js"></script>
+    <script src="script.js"></script>
+    <script>
+        injectNavigation('home');
+    </script>
+</body>
+</html>
